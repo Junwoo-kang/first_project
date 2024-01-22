@@ -5,7 +5,7 @@
 # 📖 프로젝트 개요
 ##  프로젝트 소개 
 #### 교육기관을 모델링하여 다수의 인원을 위한 프로젝트를 관리하는 시스템입니다. <br>팀장의 프로젝트 생성 후 각 팀원은 작업을 생성하여 각자의 진행 상황을 다양한 방식으로 확인할 수 있으며, 프로젝트를 체계적으로 관리할 수 있습니다.  <br> 참고 사이트로는 github와 Notion이 있습니다.
-<a href="https://drive.google.com/file/d/1KNCtEVMjgb-_PK2dbBusQsx2LOx4h4aN/view?usp=drive_link">📌 프로젝트 전체 PPT 보기</a>📌 
+<a href="https://drive.google.com/file/d/1uJAiRvnKQZz13qjMUNyhimV0wr-COuZM/view?usp=drive_link">📌 프로젝트 전체 PPT 보기</a>📌 
 
 ![시스템 프로세스](readme_image/project_summary_1.PNG)
 
