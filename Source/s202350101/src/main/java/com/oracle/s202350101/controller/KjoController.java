@@ -71,9 +71,10 @@ public class KjoController {
         //  강의 종료 날짜가 강의 시작 날짜보다 작을 때 -> 에러 발생 & 표시
         if (cr.getClass_start_date() != null && cr.getClass_end_date() != null) {
             crtimeresult = cr.getClass_start_date().compareTo(cr.getClass_end_date());
-        }
-        if (crtimeresult > 0) {
-            bindingResult.rejectValue("startDate", "Classroom.dateError.Object");
+
+            if (crtimeresult > 0) {
+                bindingResult.rejectValue("startDate", "Classroom.dateError.Object");
+            }
         }
         
         if (bindingResult.hasErrors()) {
@@ -130,9 +131,7 @@ public class KjoController {
     @GetMapping("/admin_board")
     public String admin_board(@RequestParam(defaultValue = "1") String currentPage, ClassRoom cr, Model model, HttpServletRequest request) {
         UserInfo userInfoDTO = (UserInfo) request.getSession().getAttribute("userInfo");
-//        if (!userInfoDTO.getUser_id().equals("admin")) {
-//            return "/main";
-//        }
+
 
         log.info("admin_board");
         //--------------------------------------------------------
